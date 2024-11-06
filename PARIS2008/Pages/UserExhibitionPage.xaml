@@ -1,0 +1,26 @@
+﻿<Page x:Class="PARIS2008.Pages.UserExhibitionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PARIS2008.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="UserExhibitionPage">
+
+    <Grid>
+        <ListView Grid.Row="1" Name="ListExhibitions" ScrollViewer.HorizontalScrollBarVisibility="Hidden" MouseDoubleClick="ListExhibitions_MouseDoubleClick">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=id_Exhibition}" Width="110">Номер выставки</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Date}" Width="120">Дата проведения</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Rewards}" Width="150">Призовой фонд</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Place.City}" Width="120">Город</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Place.Name}" Width="240">Место проведения</GridViewColumn>
+                    
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Page>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a2da93da47b3487e9cffbe54a24c3061" Name="Diagram1">
+        <EntityTypeShape EntityType="hypeCactusModel.Cactus" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="hypeCactusModel.Cactus_Exhibition" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="hypeCactusModel.Exhibition" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="hypeCactusModel.Origin" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="hypeCactusModel.Place" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="hypeCactusModel.Role" Width="1.5" PointX="2.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="hypeCactusModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="hypeCactusModel.User" Width="1.5" PointX="5" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="hypeCactusModel.Vid_Cactus" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <AssociationConnector Association="hypeCactusModel.FK_Cactus_Exhibition_Cactus" ManuallyRouted="false" />
+        <AssociationConnector Association="hypeCactusModel.FK_Cactus_Origin" ManuallyRouted="false" />
+        <AssociationConnector Association="hypeCactusModel.FK_Cactus_Vid_Cactus" ManuallyRouted="false" />
+        <AssociationConnector Association="hypeCactusModel.FK_Cactus_Exhibition_Exhibition" ManuallyRouted="false" />
+        <AssociationConnector Association="hypeCactusModel.FK_Exhibition_Place" ManuallyRouted="false" />
+        <AssociationConnector Association="hypeCactusModel.FK_User_Role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
